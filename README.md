@@ -5,7 +5,7 @@ NetCodePool-API
 ```python
 import api
 
-net = NetCodePoolAPI('API-KEY-HERE')
+net = api.NetCodePoolAPI('API-KEY-HERE')
 
 print 'Alive workers:', [k for k, v in net.get_workers().items() if v['alive']]
 print 'Best hashrate:', max([v['hashrate'] for k, v in net.get_workers().items()])
