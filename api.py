@@ -19,7 +19,7 @@ class NetCodePoolAPI:
                 'username': content['username'],
                 'rewards': int(content['confirmed_rewards']),
                 'hashrate': int(content['total_hashrate']),
-                'history': content['payout_history'],
+                'history': float(content['payout_history']),
                 'estimate': float(content['round_estimate'])
             },
             'workers': {}
