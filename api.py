@@ -18,7 +18,7 @@ class NetCodePoolAPI:
             'stats': {
                 'username': content['username'],
                 'rewards': content['username'],
-                'hashrate': content['total_hashrate'],
+                'hashrate': int(content['total_hashrate']),
                 'history': content['payout_history'],
                 'estimate': content['round_estimate']
             },
