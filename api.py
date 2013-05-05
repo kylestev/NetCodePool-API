@@ -9,6 +9,7 @@ class NetCodePoolAPI:
     def __init__(self, key):
         self.key = key
         self.sesh = Session()
+        self.refresh()
 
     def refresh(self):
         """Updates the internal data"""
