@@ -17,7 +17,7 @@ class NetCodePoolAPI:
         self.data = {
             'stats': {
                 'username': content['username'],
-                'rewards': content['confirmed_rewards'],
+                'rewards': int(content['confirmed_rewards']),
                 'hashrate': int(content['total_hashrate']),
                 'history': content['payout_history'],
                 'estimate': float(content['round_estimate'])
